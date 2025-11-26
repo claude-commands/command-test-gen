@@ -12,11 +12,13 @@ Display usage information and ask for input:
 **Usage:** `/test-gen <target>`
 
 **Examples:**
+
 - `/test-gen src/auth/login.ts` - Generate tests for a file
 - `/test-gen handleAuthentication` - Generate tests for a function
 - `/test-gen src/utils/` - Generate tests for a module
 
 **Workflow:**
+
 1. Detect your project's testing framework
 2. Analyze the target code structure
 3. Generate comprehensive test cases (happy path, edge cases, errors)
@@ -29,7 +31,8 @@ Ask the user: "What file or function would you like me to generate tests for?"
 
 **If `$ARGUMENTS` is provided:**
 
-Generate comprehensive tests for the specified code. Follows project testing patterns and includes edge cases, boundary conditions, and error scenarios.
+Generate comprehensive tests for the specified code. Follows project testing patterns and includes
+edge cases, boundary conditions, and error scenarios.
 
 ## Configuration
 
@@ -98,7 +101,8 @@ Generate comprehensive tests for the specified code. Follows project testing pat
    - Assertion style
 
    Structure tests as:
-   ```
+
+   ```text
    describe('FunctionName', () => {
      describe('happy path', () => {
        it('should handle typical input', () => {...})
@@ -115,7 +119,7 @@ Generate comprehensive tests for the specified code. Follows project testing pat
        it('should handle network errors', () => {...})
      })
    })
-   ```
+   ```text
 
 5. **Add Mocking** (when needed)
 
@@ -182,7 +186,7 @@ describe('authenticate', () => {
       .rejects.toThrow('Invalid credentials')
   })
 })
-```
+```text
 
 ## Notes
 

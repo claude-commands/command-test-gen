@@ -14,7 +14,7 @@ ln -s <clone-path>/command-test-gen/test-gen.md ~/.claude/commands/test-gen.md
 
 ## Usage
 
-```
+```text
 /test-gen src/auth/login.ts         # Generate tests for a file
 /test-gen handleAuthentication      # Generate tests for a function
 ```
